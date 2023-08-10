@@ -1,0 +1,157 @@
+@font-face {
+    font-family: FuturaBQBook;
+    src: url('fonts/FuturaBQ-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: IconFont;
+    src: url(https://static.cargo.site/assets/social/IconFont-Regular-0.9.3.woff2);
+    unicode-range: U+E000-E15C,
+    U+F0000,
+    U+FE0E;
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: NimbusSansL;
+    src: url('fonts/nimbus_sans_l_regular_condensed.ttf');
+}
+
+body {
+    background-color: #000000;
+    color: #b0bfbf;
+    font-size: 3vw;
+}
+
+.logo-container {
+    padding-top: 4%;
+    padding-left: 4%;
+}
+
+.big-logo {
+    margin: 0 auto;
+}
+
+.futura-bq-book {
+    font-family: FuturaBQBook, sans-serif;
+}
+
+.icon-font {
+    font-family: IconFont, sans-serif;
+}
+
+.nimbus-sans-l {
+    font-family: NimbusSansL, sans-serif;
+}
+
+.unselectable-text {
+    user-select: none;
+}
+
+.neutral-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.graphic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 0.5em;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.name-font {
+    font-size: 150%;
+    letter-spacing: 0px;
+    padding-left: 0.5em;
+}
+
+.asterisks-graphic-mobile {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asterisks-graphic-desktop {
+    visibility: hidden;
+    display: none;
+}
+
+.work-list-style {
+    padding-left: 0.5em;
+    font-size: 150%;
+    font-weight: 500;
+    line-height: 1.1em;
+    font-stretch: expanded;
+}
+
+.work-ol {
+    list-style: none;
+    counter-reset: two-digit-counter;
+}
+
+.work-ol li::before {
+    content: counter(two-digit-counter, decimal-leading-zero) ".";
+    counter-increment: two-digit-counter;
+    padding-right: 0.5em;
+}
+
+.footer-style {
+    font-size: 150%;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    display: inline-block;
+}
+
+.footer-year,
+.footer-location {
+    display: inline-block;
+}
+
+.footer-year {
+    margin-right: 7em;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    flex: 1;
+}
+
+footer {
+    background-color: #000000;
+    color: #b0bfbf;
+    padding-left: 0.5%;
+    position: sticky;
+    bottom: 0;
+}
+
+
+/* TABLETS */
+@media (min-width: 786px) {
+
+}
+
+/* DESKTOPS */
+@media (min-width: 1024px) {
+    .asterisks-graphic-desktop {
+        visibility: visible;
+    }
+
+    .asterisks-graphic-mobile {
+        visibility: hidden;
+    }
+    
+}
