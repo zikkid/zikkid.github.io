@@ -110,6 +110,11 @@ img {
     padding-right: 0.5em;
 }
 
+.footer-links {
+    padding-left: 10em;
+    padding-bottom: 1.5em;
+}
+
 .footer-style {
     font-size: 150%;
     padding-top: 1em;
@@ -120,11 +125,13 @@ img {
 
 .footer-year,
 .footer-location {
-    display: inline-block;
+    display: flex;
+    position: absolute;
+    padding-bottom: 0.5em;
 }
 
-.footer-year {
-    margin-right: 7em;
+.footer-location {
+    margin-left: 10em;
 }
 
 main {
