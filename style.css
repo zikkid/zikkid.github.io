@@ -71,6 +71,11 @@ img {
     font-size: 150%;
     letter-spacing: 0px;
     padding-left: 0.5em;
+    margin-bottom: -0.8em;
+}
+
+.occupation-style {
+    margin-bottom: 0.7em;
 }
 
 .asterisks-graphic-mobile {
@@ -91,6 +96,7 @@ img {
     font-weight: 500;
     line-height: 1.1em;
     font-stretch: expanded;
+    margin-top: 0.4em;
 }
 
 .work-ol {
