@@ -12,12 +12,6 @@ body {
     flex-direction: column;
 }
 
-p {
-    font-size: 1.40rem;
-    line-height: 1;
-    white-space: pre-line;
-    margin: 0;
-}
 
 /* body-text styling */
 .body-text {
@@ -27,7 +21,15 @@ p {
     padding: 0.5rem;
     font-family: "Arial Black", Arial, sans-serif; 
     color: #FFFFFF;
-    max-height: 50vh; 
+    max-height: 70vh; 
+    overflow: hidden;
+}
+
+.body-text p {
+    font-size: clamp(1rem, 4vw, 2rem);
+    line-height: 1;
+    white-space: pre-line;
+    margin: 0;
 }
 
 /* body-logo styling */
@@ -38,6 +40,47 @@ p {
 }
 
 .body-logo img {
-    width: 20rem;
+    width: 25rem;
     height: auto;
 }
+
+/* mobile styles */
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+  
+    .body-text {
+        width: 95%;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    .body-text p {
+        font-size: clamp(1.2rem, 5vw, 2rem);
+        line-height: 1;
+        margin: 0;
+        white-space: pre-wrap;
+    }
+  
+    .body-logo {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        right: auto;
+    }
+  
+    /* swap logo image for mobile */
+    .body-logo img {
+        width: 12rem;
+        content: url("pics/FF_LOGO_BLACK_WHITE_BOX.png");
+    }
+}
+
+/* iPad */
+@media only screen and (min-width: 769px) and (max-width: 1180px) {
+    .body-logo img {
+      width: 16rem; /* scale down from desktop 25rem, adjust as you like */
+    }
+  }
