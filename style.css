@@ -88,7 +88,7 @@ body {
 
 @supports (padding: env(safe-area-inset-bottom)) {
     .body-logo {
-        bottom: 1rem;
-        padding-bottom: env(safe-area-inset-bottom);
+        bottom: 0;
+        padding-bottom: calc(env(safe-area-inset-bottom) + 1rem);
     }
 }
