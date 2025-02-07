@@ -64,7 +64,7 @@ body {
     }
   
     .body-logo {
-        position: fixed;
+        position: absolute;
         bottom: 1rem;
         left: 50%;
         transform: translateX(-50%);
@@ -88,6 +88,7 @@ body {
 
 @supports (padding: env(safe-area-inset-bottom)) {
     .body-logo {
-      padding-bottom: env(safe-area-inset-bottom);
+        bottom: 1rem;
+        padding-bottom: env(safe-area-inset-bottom);
     }
 }
