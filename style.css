@@ -64,7 +64,7 @@ body {
     }
   
     .body-logo {
-        position: absolute;
+        position: fixed;
         bottom: 1rem;
         left: 50%;
         transform: translateX(-50%);
