@@ -84,4 +84,10 @@ body {
     .body-logo img {
       width: 16rem; /* scale down from desktop 25rem, adjust as you like */
     }
-  }
+}
+
+@supports (padding: env(safe-area-inset-bottom)) {
+    .body-logo {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+}
