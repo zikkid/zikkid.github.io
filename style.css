@@ -26,7 +26,7 @@ body {
 }
 
 .body-text p {
-    font-size: clamp(1rem, 4vw, 2rem);
+    font-size: clamp(1rem, 3vw, 2rem);
     line-height: 1;
     white-space: pre-line;
     margin: 0;
@@ -74,7 +74,7 @@ body {
     /* swap logo image for mobile */
     .body-logo img {
         width: 12rem;
-        content: url("pics/FF_LOGO_BLACK_WHITE_BOX.png");
+        content: url("images/FF_LOGO_BLACK_WHITE_BOX.png");
     }
 }
 
