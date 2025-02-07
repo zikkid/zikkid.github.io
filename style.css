@@ -15,7 +15,6 @@ body {
     color: white;
     /* background: linear-gradient(to bottom, #111111 25%, #222222 50%, #515151 65%, #808080 70%, #FFFFFF 100%); */
     background: linear-gradient(to bottom, #111111 15%, #221F20 45%, #515151 60%, #75777A 75%, #EAEBEC 100%);
-    flex-direction: column;
 }
 
 
@@ -52,9 +51,6 @@ body {
 
 /* mobile styles */
 @media only screen and (max-width: 768px) {
-    body {
-        flex-direction: column;
-    }
   
     .body-text {
         width: 95%;
@@ -80,7 +76,7 @@ body {
   
     /* swap logo image for mobile */
     .body-logo img {
-        width: 12rem;
+        width: 10rem;
         content: url("images/FF_LOGO_BLACK_WHITE_BOX.png");
     }
 }
