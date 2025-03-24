@@ -12,7 +12,7 @@ body {
     position: relative;
     margin: 0;
     font-family:"Arial Black", "Arial Bold", Gadget, sans-serif;
-    font-weight: 1100;
+    font-weight: bold;
     color: white;
     /* background: linear-gradient(to bottom, #111111 25%, #222222 50%, #515151 65%, #808080 70%, #FFFFFF 100%); */
     background: linear-gradient(to bottom, #111111 15%, #221F20 45%, #515151 60%, #75777A 75%, #EAEBEC 100%);
@@ -37,8 +37,8 @@ body {
     line-height: 1.15;
     white-space: normal;
     margin: 0;
-    font-family: "Arial Bold", Arial, sans-serif;
-    font-weight: bold;
+    /* font-family: "Arial Bold", Arial, sans-serif;
+    font-weight: 900; */
 }
 
 .body-text a {
