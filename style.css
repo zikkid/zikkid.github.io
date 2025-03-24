@@ -67,9 +67,9 @@ body {
 
     .body-text p {
         font-size: clamp(1.2rem, 5vw, 2rem);
-        line-height: 1;
+        line-height: 1.2;
         margin: 0;
-        white-space: pre-wrap;
+        white-space: normal;
     }
   
     .body-logo {
