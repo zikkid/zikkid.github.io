@@ -29,13 +29,19 @@ body {
     color: #FFFFFF;
     max-height: 70vh; 
     overflow: hidden;
+    width: 50%;
 }
 
 .body-text p {
     font-size: clamp(1rem, 3vw, 2rem);
-    line-height: 1;
-    white-space: pre-line;
+    line-height: 1.15;
+    white-space: normal;
     margin: 0;
+}
+
+.body-text a {
+    color: white;
+    text-decoration: underline;
 }
 
 /* body-logo styling */
