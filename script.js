@@ -5,7 +5,7 @@ function fitText() {
     let fontSize = 32;  // 2 rem
     paragraph.style.fontSize = fontSize + 'px';
 
-    while (container.scrollHeight > container.clientHeight && fontSize > 8) {
+    while (container.scrollHeight > container.clientHeight && fontSize > 20) {
         fontSize--;
         paragraph.style.fontSize = fontSize + 'px';
     }
